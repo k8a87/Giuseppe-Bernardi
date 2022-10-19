@@ -1,0 +1,84 @@
+@include media-md {
+  body header {
+    position: absolute;
+  }
+
+  .menu-btn {
+    visibility: hidden;
+  }
+
+  .nav {
+    visibility: visible;
+    position: absolute;
+
+    .menu-nav {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
+
+      &__item {
+        display: inline;
+        padding-right: 1.5rem;
+      }
+
+      &__link {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .about__bio {
+    font-size: 1.5rem;
+  }
+
+  .showreel {
+    &__bio-image {
+      height: 60vh;
+      .text-secondary {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__items {
+      width: 600px;
+      iframe {
+        width: 600px;
+      }
+    }
+    .text-secondary {
+      font-size: 3rem;
+    }
+  }
+
+  .contact {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@include media-lg {
+  .showreel__items {
+    width: 800px;
+    iframe {
+      width: 800px;
+    }
+  }
+  .contact {
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@include media-xl {
+  .showreel__bio-image {
+    height: 50vh;
+  }
+
+  .about .jobs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

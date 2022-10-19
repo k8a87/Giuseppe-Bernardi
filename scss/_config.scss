@@ -1,0 +1,38 @@
+$primary-color: #025450;
+$secondary-color: #ff652f;
+$ternary-color: #0c0c0c;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color) {
+  @if (lightness($color) >40%) {
+    @return #000;
+  } @else {
+    @return rgb(207, 207, 207);
+  }
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
