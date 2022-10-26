@@ -74,7 +74,7 @@
     list-style-type: none;
     padding-right: 1rem;
     transform: translateY(-100%);
-    clip-path: polygon(13% 0, 100% 19%, 85% 100%, 0 100%);
+    clip-path: polygon(13% 0, 100% 16%, 100% 97%, 0 100%);
     backdrop-filter: blur(50px);
     z-index: 1;
     @include transition-ease;
