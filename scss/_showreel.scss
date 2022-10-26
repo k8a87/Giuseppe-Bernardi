@@ -2,7 +2,7 @@
   padding-bottom: 2rem;
 
   &__bio-image {
-    height: 60vh;
+    height: 40vh;
     width: 100%;
     background: linear-gradient(
         to right,
@@ -10,6 +10,8 @@
         rgba($ternary-color, 0.3)
       ),
       url(/img/model-1.webp) center top;
+    clip-path: polygon(13% 0, 100% 19%, 85% 100%, 0 100%);
+
     // background-size: cover;
     display: flex;
     flex-direction: column;

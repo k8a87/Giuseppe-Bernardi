@@ -10,6 +10,7 @@
       rgba($ternary-color, 0.3)
     ),
     url(/img/model-1.webp) center top;
+  clip-path: polygon(20% 0, 0 95%, 100% 98%, 95% 0);
 
   &__name {
     font-size: 5rem;

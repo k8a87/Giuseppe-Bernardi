@@ -1,6 +1,6 @@
 .contact {
   height: 100%;
-  padding-top: 30vh;
+  padding-top: 60vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
       rgba($ternary-color, 0.3)
     ),
     url(/img/model-1.webp) center top;
-  background-size: cover;
+  clip-path: polygon(-2% 2%, 100% 13%, 92% 100%, 0 96%);
 
   h2 {
     font-size: 3rem;

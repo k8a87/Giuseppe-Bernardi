@@ -29,8 +29,26 @@
     }
   }
 
-  .about__bio {
-    font-size: 1.5rem;
+  .about {
+    .gallery {
+      img {
+        width: 10vw;
+        margin: 0 1rem;
+      }
+    }
+    .bio {
+      display: flex;
+      text-align: start;
+      &__text {
+        width: 50vw;
+      }
+      &__img {
+        width: 20vw;
+      }
+    }
+    &__bio {
+      font-size: 1.5rem;
+    }
   }
 
   .showreel {
@@ -51,12 +69,6 @@
       font-size: 3rem;
     }
   }
-
-  .contact {
-    &__list {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
 }
 
 @include media-lg {
@@ -66,19 +78,10 @@
       width: 800px;
     }
   }
-  .contact {
-    &__list {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
 }
 
 @include media-xl {
   .showreel__bio-image {
     height: 50vh;
-  }
-
-  .about .jobs {
-    grid-template-columns: repeat(3, 1fr);
   }
 }

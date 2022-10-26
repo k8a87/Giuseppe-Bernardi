@@ -14,6 +14,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    clip-path: polygon(0 0, 100% 19%, 85% 100%, 0 95%);
     p {
       margin-bottom: 2rem;
     }
@@ -59,27 +60,6 @@
     margin-top: 1rem;
     img {
       width: 20vw;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .about {
-    .gallery {
-      img {
-        width: 10vw;
-        margin: 0 1rem;
-      }
-    }
-    .bio {
-      display: flex;
-      text-align: start;
-      &__text {
-        width: 50vw;
-      }
-      &__img {
-        width: 20vw;
-      }
     }
   }
 }
